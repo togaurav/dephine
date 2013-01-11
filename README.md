@@ -2,10 +2,6 @@
 
 Google dictionary in terminal
 
-## Installation
-
-    $ gem install define
-
 ## Usage
 
 	$ define [word]
