@@ -1,8 +1,8 @@
-require 'define/version'
+require 'dephine/version'
 require 'open-uri'
 require 'json'
 
-module Define
+module Dephine
   class Dictionary
     # Public: Returns the Array meanings of the word.
     attr_reader :meanings

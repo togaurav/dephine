@@ -1,14 +1,18 @@
-# Define
+# Dephine
 
 Google dictionary in terminal
 
 ## Usage
 
-	$ define [word]
+	$ dephine [word]
+
+## Installation
+
+	$ gem install dephine
 
 ## What it looks like
 
-	% define anything
+	$ dephine anything
 	anything
 
 	pronoun /ˈenēˌTHiNG/

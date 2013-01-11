@@ -1,17 +1,17 @@
 #!/usr/bin/env ruby
 
 $:.unshift File.join(File.expand_path(File.dirname(__FILE__)), %w[.. lib])
-require 'define'
+require 'dephine'
 
 banner = <<-END
-Define, Google dictionary in terminal
-Usage: define [word]
+Dephine, Google dictionary in terminal
+Usage: dephine [word]
 END
 
 if ARGV.empty?
   puts banner
 else
-  word = Define::Dictionary.new(ARGV[0])
+  word = Dephine::Dictionary.new(ARGV[0])
   puts ARGV[0]
   word.meanings.each do |m|
     puts
