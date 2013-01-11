@@ -2,13 +2,13 @@
 
 Google dictionary in terminal
 
-## Usage
-
-	$ dephine [word]
-
 ## Installation
 
 	$ gem install dephine
+
+## Usage
+
+	$ dephine [word]
 
 ## What it looks like
 
