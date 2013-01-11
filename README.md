@@ -6,6 +6,18 @@ Google dictionary in terminal
 
 	$ define [word]
 
+## What it looks like
+
+	% define anything
+	anything
+
+	pronoun /ˈenēˌTHiNG/
+	  Used for emphasis
+	    - I was ready for anything
+
+	  Used to indicate a range
+	    - he trains anything from seven to eight hours a day
+
 ## Contributing
 
 1. Fork it
