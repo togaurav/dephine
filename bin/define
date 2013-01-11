@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+$:.unshift File.join(File.expand_path(File.dirname(__FILE__)), %w[.. lib])
+require 'define'
+
+banner = <<-END
+Define, Google dictionary in terminal
+Usage: define [word]
+END
+
+if ARGV.empty?
+  puts banner
+else
+  word = Define::Dictionary.new(ARGV[0])
+  puts ARGV[0]
+  word.meanings.each do |m|
+    puts
+    puts "#{m[:type].downcase} #{m[:phonetic]}"
+    m[:meanings].each do |d|
+      puts "  #{d[:text]}"
+      d[:examples].each do |eg|
+        puts "    - #{eg}"
+      end
+      puts
+    end
+  end
+end
