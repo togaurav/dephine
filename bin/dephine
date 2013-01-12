@@ -12,6 +12,11 @@ if ARGV.empty?
   puts banner
 else
   word = Dephine::Dictionary.new(ARGV[0])
+
+  if word.meanings.empty?
+    abort("Word not found in the dictionary!")
+  end
+
   puts ARGV[0]
   word.meanings.each do |m|
     puts
