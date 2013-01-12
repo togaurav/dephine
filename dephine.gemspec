@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Sina Samavati"]
   gem.email         = ["contact@s1n4.com"]
   gem.summary       = %q{Google dictionary in terminal}
-  gem.homepage      = "https://github.com/s1n4/dephine"
+  gem.homepage      = "http://s1n4.com/dephine"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
