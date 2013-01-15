@@ -41,6 +41,7 @@ module Dephine
                 .gsub('x27', "'").gsub(/x3.*?3e/, '')
             end
           end
+
         end if primary.has_key?('entries')
       end if content.has_key?('primaries')
     end

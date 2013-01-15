@@ -3,30 +3,4 @@
 $:.unshift File.join(File.expand_path(File.dirname(__FILE__)), %w[.. lib])
 require 'dephine'
 
-banner = <<-END
-Dephine, Google dictionary in terminal
-Usage: dephine [word]
-END
-
-if ARGV.empty?
-  puts banner
-else
-  word = Dephine::Dictionary.new(ARGV[0])
-
-  if word.meanings.empty?
-    abort("Word not found in the dictionary!")
-  end
-
-  puts ARGV[0]
-  word.meanings.each do |m|
-    puts
-    puts "#{m[:type].downcase} #{m[:phonetic]}"
-    m[:meanings].each do |d|
-      puts "  #{d[:text]}"
-      d[:examples].each do |eg|
-        puts "    - #{eg}"
-      end
-      puts
-    end
-  end
-end
+Dephine::CLI.start(ARGV)
