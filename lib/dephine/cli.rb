@@ -2,13 +2,12 @@ module Dephine
   class CLI
     class << self
       def start(args)
-        banner = <<-END
-          Dephine, Google dictionary in terminal
-          Usage: dephine [word]
-        END
+        banner = []
+        banner << 'Dephine, Google dictionary in terminal'
+        banner << 'Usage: dephine [word]'
 
         if args.empty?
-          puts banner
+          puts banner.join("\n")
         else
           define(args[0])
         end
